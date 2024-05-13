@@ -1,0 +1,29 @@
+{
+  "name": "tree-sitter-spec",
+  "version": "0.0.1",
+  "description": "spec grammar for tree-sitter",
+  "main": "bindings/node",
+  "scripts": {
+    "tree-sitter": "tree-sitter",
+    "test": "npm run generate && tree-sitter test",
+    "test:update": "npm run generate && tree-sitter test -u"
+  },
+  "keywords": ["parser", "tree-sitter","spec"],
+  "author": "https://github.com/sigmaSd/",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "tree-sitter-cli": "^0.20.8"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.spec",
+      "file-types": [
+        "spec"
+      ]
+    }
+  ]
+}
